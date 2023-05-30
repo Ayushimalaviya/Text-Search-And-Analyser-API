@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightblue;
+  }
+p,form {
+    justify-content: center;
+    align-items: center;
+}
+h1,
+h2{
+    color: #eb824a;
+    margin-bottom: 7px;
+}
+h1 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+}
+h2 {
+    color: #4d8ee4;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+a{
+    color: rgb(55, 116, 116);
+}

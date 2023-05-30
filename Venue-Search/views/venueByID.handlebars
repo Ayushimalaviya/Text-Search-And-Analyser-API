@@ -1,0 +1,49 @@
+
+<header><h1>{{title}}</h1></header>
+<main>
+    <div>
+        <h2>{{venue.name}}</h2>
+        {{#if venue.images}}
+          {{#each venue.images}}
+             <img src={{url}} alt={{venue.name}}>
+          {{/each}}
+        {{else}}
+            <img src="../public/images/No_Image_Available.jpg" alt='No Image Found'>
+        {{/if}}
+        <br>
+        {{#if venue.url}}
+           <a target="_blank" href={{venue.url}}>Venue Information on Ticketmaster</a>
+        {{else}}
+           "N/A"
+        {{/if}}
+        <address>Address:
+           {{#if venue.address.line1}}
+              {{venue.address.line1}},
+           {{else}}
+              "N/A",
+           {{/if}}
+           {{#if venue.city.name}}
+              {{venue.city.name}},
+           {{else}}
+              "N/A",
+           {{/if}}
+           {{#if venue.state.stateCode}}
+              {{venue.state.stateCode}},
+           {{else}}
+              "N/A",
+           {{/if}}
+           {{#if venue.postalCode}}
+              {{venue.postalCode}}
+           {{else}}
+              "N/A"
+           {{/if}}
+        </address>
+        <address>Phone:
+           {{#if venue.boxOfficeInfo.phoneNumberDetail}}
+              {{venue.boxOfficeInfo.phoneNumberDetail}}
+           {{else}}
+              "N/A"
+           {{/if}}
+        </address>
+    </div>
+</main>

@@ -1,0 +1,19 @@
+
+<h1>{{title}}</h1>
+{{!-- Venues Found --}}
+<h2>Search Results for {{searchVenueTerm}}</h2>
+<main>
+  <ol>
+      {{#each venues}}
+        <li>
+           <a href="/venuedetails/{{id}}">{{name}}</a>
+        </li>
+      {{/each}}
+  </ol>
+  <a href="/">Make another search</a>
+</main>
+
+        
+  
+  
+  
