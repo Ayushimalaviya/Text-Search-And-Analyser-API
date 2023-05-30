@@ -1,0 +1,34 @@
+<!-- 
+A header tag, with an h1 naming your site, with a title for your page. 
+A footer with your name, student ID, and any other info about yourself you wish to include
+A single div with an id of results.  
+Your page will have a form with the following:
+
+A label with a for attribute referencing your input
+A textarea element with a name and id of text_input
+A button to submit the form
+ -->
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta charset="UTF-8">
+     <link rel="stylesheet" href="./public/css/main.css">
+     <title>Text Analyzer</title>
+   </head>
+   <body>
+     <header>
+       <h1>Text Analyzer</h1>
+     </header>
+     <form method="POST" id="myForm">
+       <label for="text_input" id="formlabel">Enter some text:</label>
+       <textarea id="text_input" name="text_input"></textarea>
+       <button type="submit">Analyze</button>
+       <div id="error" class="error" hidden></div>
+       <div id="results"></div>
+     </form>
+     <footer>
+       <p>Ayushi Malaviya, 20010560</p>
+     </footer>
+     <script src='/public/js/main.js'></script>
+   </body>
+ </html>
